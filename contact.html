@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+</head>
+<body>
+
+    <h5><a href="product.html">Back</a></h5> 
+  <h1>Contact Us</h1>
+
+  <!--Form Tag-->
+  <form action="product.html" method="POST">
+
+    <!--First and last name-->
+    <div>
+      <label for="first-name">First Name:</label>
+      <input type="text" name="first-name" id="first-name" placeholder="John" required />
+      <label for="last-name">Last Name:</label>
+      <input type="text" name="last-name" id="last-name" placeholder="Smith" required />
+    </div>
+    
+     <!--Email-->
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com">
+    </div>
+
+    <!--Comment-->
+    <div>
+         <label for="subject">Your Comment:</label> <br>
+         <textarea id="subject" name="subject" placeholder="Write something.." rows="4" cols="50"></textarea>
+    </div>
+  
+    <!-- Agree to terms
+    <div>
+      <label for="checkbox" >I agree to the terms and conditions</label>
+      <input type="checkbox" name="checkbox" id="checkbox" required />
+    </div> -->
+
+    <!--Submit and reset buttons-->
+    <div>
+      <input id="btnSubmit" type="submit" value="Submit" />
+      <input id="btnReset" type="reset" value="Reset" />
+    </div>
+  </form> 
+
+   <!--Mail to seller - direct link to outlook-->
+  <h4>
+        Is there a more urgent matter? <a href="mailto:seller@sellercompany.com" target="_blank">Send Mail to Seller</a>
+  </h4>
+
+</body>
+</html>
