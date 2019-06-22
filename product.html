@@ -14,93 +14,109 @@
   <a name="top"></a>
 
   <header id="header">
-    <div class="container">
-      <div id="logo">
-        <img src="images/MOZoneLogo.png" width="130" height="120">
-      </div>
-      <!--Navbar - currently only contact form is active-->
-
+    <div id="logo">
+      <img src="images/MOZonl.png">
     </div>
+
+    <!--Navbar - currently only contact form is active-->
 
   </header>
   <nav class="mainnav">
     <ul>
-      <li><a href="">Search</a></li>
+      <li><a href="">Home</a></li>
       <li><a href="">Cart</a></li>
       <li><a href="">Account</a>
       <li><a href="">Help</a></li>
     </ul>
   </nav>
-
- 
+  <div class="topright">
+    <a href=""><img src="images/Ecommerce_648.jpg" alt="Buy me now" width="60" height="60"></a>
+  </div>
+  <div class="topleft">
+    <a href=""><img src="images/Ecommerce_648.jpg" alt="Buy me now" width="60" height="60"></a>
+  </div>
   <!--Description-->
   <section id="description">
     <div class="container">
-      <article>
-        <!--Header of the product-->
-        <h1> Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel</h1>
-        <h2>Focus with Precision</h2>
-        <p>
-          All camera users, even beginners, will be able to capture amazing images and movies with this DSLR camera,
-          which
-          is equipped with a 24.1-megapixel APS-C-size CMOS sensor and an optical viewfinder for an authentic DSLR
-          shooting experience. Capturing sharp images is easy thanks to the fast, accurate AF and the large grip that
-          provides a firm, steady hold on the camera. Built-in Wi-Fi / NFC connectivity enables the seamless upload of
-          photos and videos to social media.
-        </p>
-      </article>
+      <div class="desc">
+        <article>
+          <!--Header of the product-->
+          <h1> Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel</h1>
+          <h3>Focus with Precision</h3>
+          <p>
+            All camera users, even beginners, will be able to capture amazing images and movies with this DSLR camera,
+            which
+            is equipped with a 24.1-megapixel APS-C-size CMOS sensor and an optical viewfinder for an authentic DSLR
+            shooting experience. Capturing sharp images is easy thanks to the fast, accurate AF and the large grip that
+            provides a firm, steady hold on the camera. Built-in Wi-Fi / NFC connectivity enables the seamless upload of
+            photos and videos to social media.
+          </p>
+        </article>
+      </div>
+
     </div>
   </section>
- <!--my test div-->
- <div class="testdiv container">
-      <!--Picture-->
 
-  <figure id="camimage">
-    <div class="container">
-      <img src="images/canon1500new.jfif" title="Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel"
-        alt="Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel">
-      <figcaption>Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel</figcaption>
-    </div>
-  </figure>
-</div>
+  <div class="camdiv innerSquares">
+    <!--Picture-->
+    <figure id="camimage">
+      <div class="container">
+        <img src="images/canon1500new.jfif" title="Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel"
+          alt="Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel">
+        <figcaption>Canon Digital SLR Camera Body</figcaption>
 
 
+      </div>
+    </figure>
+    <a href="contact.html" class="button">Add to Cart</a>
+    <a href="contact.html" class="button">Contact Seller</a>
+  </div>
 
   <!--List of fitures-->
   <section>
-    <div class="container">
-      <h2>List of Fitures</h2>
-      <ul>
-        <li>The EOS 1500D camera’s Intelligent Viewfinder helps bring the thrill of SLR photography with each use
-        </li>
-        <li>The Intelligent Viewfinder displays AF points and AF mode, has a grid display, a horizontal electronic
-          level, plus numerous other points of information
-        </li>
-        <li>For next-level AF operation, the EOS 1500D camera has a wide-area, 45-point, all cross-type AF system with
-          low luminance performance to EV -3 and 4 types of AF area selection modes
-        </li>
-        <li>Canon’s remarkable shutter combined with ability to shoot up to 7.0 fps during continuous shooting ensures
-          quick performance
-          <details>
-            <summary>Smartphone Usege</summary>
-            <p>Using a compatible smartphone with the <mark>Camera Connect App</mark> installed, you can shoot remotely
-              from a distance, even in Live View mode, for those difficult-to-capture shots.</p>
-          </details>
-        </li>
-      </ul>
+    <div id="licontainer">
+      <div id="fituresList" class="fituresDiv">
+        <ul>
+          <div class="box">
+            <li>The EOS 1500D camera’s Intelligent Viewfinder helps bring the thrill of SLR photography with each use
+            </li>
+          </div>
+          <div class="box">
+            <li>The Intelligent Viewfinder displays AF points and AF mode, has a grid display, a horizontal electronic
+              level, plus numerous other points of information
+            </li>
+          </div>
+          <div class="box">
+            <li>For next-level AF operation, the EOS 1500D camera has a wide-area, 45-point, all cross-type AF system
+              with
+              low luminance performance to EV -3 and 4 types of AF area selection modes
+            </li>
+          </div>
+          <div class="box">
+            <li>Canon’s remarkable shutter combined with ability to shoot up to 7.0 fps during continuous shooting
+              ensures
+              quick performance
+              <details>
+                <summary>Smartphone Usege</summary>
+                <p>Using a compatible smartphone with the <mark>Camera Connect App</mark> installed, you can shoot
+                  remotely
+                  from a distance, even in Live View mode, for those difficult-to-capture shots.</p>
+              </details>
+            </li>
+          </div>
+
+        </ul>
+      </div>
     </div>
+
   </section>
 
-
-
-
   <!--Comparison table-->
-  <section id="comparisonTable">
+  <section id="tableSection">
     <div class="container">
-      <h3>Compare Canon EOS 1300D (Body) Digital SLR Camera vs Canon EOS 1500D (EF-S 18-55mm f/3.5-f/5.6 IS II Kit Lens)
-        Digital SLR Camera</h3>
 
-      <table border="1">
+
+      <table id="comparisonTable">
         <tr>
           <th style="width:50%">Features</th>
           <th>
@@ -143,10 +159,7 @@
 
   </section>
 
-  <!--Link to contact form-->
-  <div id="contactDiv">
-    <h2>You have more questions ? please <a href="contact.html">Contact Us!</a></h2>
-  </div>
+
 
 
   <!--Video Demonstration-->
@@ -160,7 +173,7 @@
   <!--From File-->
   <section id="camvideo">
     <div class="container">
-      <video class="center" controls width="500" height="300">
+      <video class="center" autoplay controls width="500" height="300">
         <source src="videos/canon1500eosvideo.mp4" type="video/mp4" />
         <source src="videos/canon1500eosvideo.ogg" type="video/ogg" /> Your browser is not supported!
       </video>
@@ -169,11 +182,20 @@
   </section>
 
 
-  <!--Go to top of the page-->
-  <a href="#top">Go to top</a>
 
+
+  <div class="bottomright">
+    <a href=""><img src="images/Ecommerce_648.jpg" alt="Buy me now" width="60" height="60"></a>
+  </div>
+  <div class="bottomleft">
+    <a href=""><img src="images/Ecommerce_648.jpg" alt="Buy me now" width="60" height="60"></a>
+  </div>
   <!--Footer-->
   <footer>
+
+
+    <!--Go to top of the page-->
+    <a href="#top">Go to top</a>
     <p>Copyright &copy; Mordi Abukarat 2019</p>
   </footer>
 </body>

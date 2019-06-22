@@ -4,50 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact Form</title>
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/contact.css">
+
 </head>
 
 <body>
+    <header id="header">
+        <div>
+          <img src="images/MOZonl.png">
+        </div>
+    
+        <!--Navbar - currently only contact form is active-->
+      
+      </header>
+      <nav class="mainnav">
+        <ul>
+          <li><a href="">Search</a></li>
+          <li><a href="">Cart</a></li>
+          <li><a href="">Account</a>
+          <li><a href="">Help</a></li>
+        </ul>
+      </nav>
   <h5><a href="product.html">Back</a></h5>
 
+  
   <!--Form section-->
   <section>
-    <h1>Contact Us</h1>
+    <h1 id="contactHeader">Contact Us</h1>
+    <div id="formsection">
+        <form action="product.html" method="POST">
 
-    <form action="product.html" method="POST">
+            <!--First and last name-->
+            <div class="formdiv"> 
+              <label for="first-name">First Name:</label>
+              <input type="text" name="first-name" id="first-name" placeholder="John" required />
+              <label for="last-name">Last Name:</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Smith" required />
+              
+               <!--Email-->
+            
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com">
+             
+            
+      
+           
+      
+            <!--Comment-->
 
-      <!--First and last name-->
-      <div>
-        <label for="first-name">First Name:</label>
-        <input type="text" name="first-name" id="first-name" placeholder="John" required />
-        <label for="last-name">Last Name:</label>
-        <input type="text" name="last-name" id="last-name" placeholder="Smith" required />
+              <label for="subject">Your Comment:</label>
+              <br>
+              <textarea id="subject" name="subject" placeholder="Write something.." rows="4" cols="50"
+                spellcheck="true"></textarea>
+           
+      
+            <!--Submit and reset buttons-->
+            
+              <input id="btnSubmit" type="submit" value="Submit" />
+              <input id="btnReset" type="reset" value="Reset" />
+            
+          </form>
+          <h4>
+              You can also contact the seller by <a href="mailto:seller@sellercompany.com" target="_blank">Email</a>
+            </h4>
       </div>
-
-      <!--Email-->
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com">
-      </div>
-
-      <!--Comment-->
-      <div>
-        <label for="subject">Your Comment:</label>
-        <br>
-        <textarea id="subject" name="subject" placeholder="Write something.." rows="4" cols="50"
-          spellcheck="true"></textarea>
-      </div>
-
-      <!--Submit and reset buttons-->
-      <div>
-        <input id="btnSubmit" type="submit" value="Submit" />
-        <input id="btnReset" type="reset" value="Reset" />
-      </div>
-    </form>
+     
   </section>
   <!--Mail to seller - direct link to outlook-->
-  <h4>
-    You can also contact the seller by <a href="mailto:seller@sellercompany.com" target="_blank">Email</a>
-  </h4>
+  
 
 
   <!--Footer-->
