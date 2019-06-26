@@ -17,7 +17,7 @@
     font-size: 16px;
     width: 90%;
     padding: 2%;
-    margin: 1% 5%;
+    margin: 2% 3%;
   }
 
   a{
@@ -34,7 +34,7 @@
   
 /* main header section */
 .main-header{
-  width: 100%;
+  width: 95%;
   padding: 3vh; /* vh - relative to the height of the browser window size*/
   background-color: rgba(34, 34, 34, 0.226);
   margin-bottom: 2%;
