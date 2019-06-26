@@ -17,7 +17,7 @@ input[type=text],input[type=email],  select {
   
   input[type=submit],input[type=reset] {
     
-    background-color: rgba(30, 108, 160, 0.918);
+    background-color: rgba(32, 202, 89, 0.918);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

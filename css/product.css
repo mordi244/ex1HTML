@@ -1,117 +1,79 @@
-/* logo */
 
-#logo img {
-    /* height:130px;
-    width:130px; */
-    width: 10%;
-    margin-left: 5%;
-}
-/* body - responsive width in percent */
-body {
-    font-family: sans-serif;
-    width: 90%;
-    padding: 3%;
-}
-
-h1 {
-    text-align: center;
-    text-decoration: underline;
-}
-
-/*nav bar with position-sticky - stays at the top of the screen */
-/* sticky is acting like fixed position, but the position become fixed when the point get to top in this case.*/
-nav {
-    position: sticky;
-    display: flex;
-    height: 40px;
-    background-color: rgba(30, 108, 160, 0.918);
-    top: 0; /* for the sticky nav bar*/
-    
-    
-    
-    
-}
-nav ul {
-    left: 8%;
-    position: relative;
-    margin-top: auto;
-    margin-bottom: auto;
-   
-    
-}
-
-nav li {
-    margin: 20px;
-    display : inline;
-}
-
-nav li a {
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-#comparisonTable {
-    border:2px solid rgba(30, 108, 160, 0.527);
-    width: 80%;
-    margin-left:auto; 
-    margin-right:auto;
-}
-#th {
-  
-}
-/* table design */
-#comparisonTable tr:nth-child(even){
-    background-color: #24212136;
-}
-#comparisonTable td, #comparisonTable th {
-    border: 1px solid rgb(221, 221, 221);
-    padding: 8px;
-}
-#comparisonTable tr:hover {
-    background-color: rgba(30, 108, 160, 0.527);
-}
-
-/* center elements */
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    display: block
-}
-
-video {
-    border: 2px rgba(30, 108, 160, 0.527) solid;
-    margin-top:3%;
-    width: 50%;
-    height: auto;
-  }
 
  
-  /* #fituresList ul li {
-    list-style-type: square;
-} */
-
-/* positioning image div */
-.camdiv {
-    height: 300px;
-    margin-left: 10%;
-    margin-right: auto;
-    display: block; 
-    float:left;
-    
-}
-
-    /* positioning footer */
-  footer {
-      margin-top:80px;
-    position: relative;
-    bottom: 0;
-    text-align: center;
-    
+  
+  /* logo size - used pixels after recommendations of logos sizes articles */
+  header img {
+    width: 250px;
+    height: 150px;
     
   }
-  /* for cart icon at the corners */
-  div.bottomright {
+
+  /* body style */
+  body{
+    background-color: white;
+    font-family: 'Open Sans', Helvetica, Verdana, sans-serif;
+    color: #222;
+    font-size: 16px;
+    width: 90%;
+    padding: 2%;
+    margin: 1% 5%;
+  }
+
+  a{
+    text-decoration: none;
+    /* color: inherit; */
+    font-weight: 300;
+  }
+
+  /* Upper case letters to headers.*/
+  h1, h2, h3{
+    text-transform: uppercase;
+  }
+
+  
+/* main header section */
+.main-header{
+  width: 100%;
+  padding: 3vh; /* vh - relative to the height of the browser window size*/
+  background-color: rgba(34, 34, 34, 0.226);
+  margin-bottom: 2%;
+}
+
+  /* main nav section */
+  .main-nav{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* spaces between the nav bar links.*/
+    align-items: center;
+  }
+
+    
+  .main-nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-right: 1em;
+  }
+
+  .main-nav ul li a{
+    padding: 5% 0% 5% 30%;
+    color:rgb(109, 109, 109);
+  }
+
+  /* end of main nav section */
+
+#description h2 {
+    margin-top: 3%;
+    text-align: center;
+    text-decoration: underline;
+   
+}
+/*END OF HEADER */
+
+/* for cart icon at the corners */
+div.bottomright {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -123,10 +85,11 @@ video {
     position: fixed;
     float: left;
     width: 5%;
-    top: 0;
+    bottom: 0;
     left: 0;
     
   }
+ 
   div.topright {
     position: fixed;
     float: left;
@@ -139,65 +102,114 @@ video {
     position: fixed;
     float: left;
     width: 5%;
-    bottom: 0;
+    top: 0;
     left: 0;
     
   }
+  div.bottomright img, div.bottomleft img,div.topright img, div.topleft img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 
-  /* fitures list */
-  #fituresList {
+/* table design */
+
+  #comparisonTable {
+    border: 2px rgba(32, 202, 89, 0.918) solid;
+    width: 80%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+#comparisonTable tr:nth-child(even){
+    background-color: #24212136;
+}
+#comparisonTable td, #comparisonTable th {
+    border: 1px solid rgb(221, 221, 221);
+    padding: 0;
+}
+#comparisonTable tr:hover {
+    background-color: rgba(32, 202, 89, 0.397);
+}
+
+/* video styling */
+video {
+    background-color: rgba(32, 202, 89, 0.918);
     margin-top:3%;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
   }
 
-  
-
-  #fituresList ul {
-    list-style-type: none;
-
+   /* positioning footer */
+   footer {
+       margin-top:3%;
+    bottom: 0;
+    text-align: center;
   }
 
-  .box {
+
+  /* wrap the main section - image and fitures list.*/
+  .fituresContainer {
     
-    float:left;
-    /* width: 200px;
-    height: 200px; */
-    width: 15%;
+
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
     
-    padding: 2%;
 }
-#licontainer {
-    
-    height: 100px;
-    width: 60%;
-    float:right;
-}
-/* clear - after using absolute position */
-.container { 
-    clear: both;
+
+/* fitures ul */
+.ulcontainer ul {
    
-} 
+  border: 2px rgb(156, 156, 156)  solid;
+  width: 80%;
+    list-style-type: none;
+    flex:1;
+    display: flex;
+    flex-wrap: wrap; /* use flex wrap to start new line if the width is not enough to the content.*/
+    margin: 2%;
+}
 
-#tableSection {
-    margin-top: 20%;
+
+.ulcontainer ul li {
+  padding: 2%; 
+  width: 35%;
+  height: 35%;
+  border: 2px rgb(156, 156, 156)  solid;
+  margin: 1%;
+  
 }
-.btnsDiv {
-    /* margin-top: 10%; */
-    border:1px black solid;
-    /* width:100px;
-    height: 100px; */
-}
+/* for future use - buttons section from right to the fitures list.*/
+/* .buttonsDiv {
+  flex:1;
+} */
 
 a.button {
   
-    border-radius: 12px;
-    background-color: rgba(30, 108, 160, 0.918);
+    border-radius: 1em;
+    background-color: rgba(32, 202, 89, 0.918);
     color: rgb(255, 255, 255); 
     /* padding: 8px 18px; */
-    padding:2% 4%;
-    font-size: 20px;
+    padding:0.5rem; 
     text-decoration:none;
    
 }
-a:hover {
-    background-color: #9b9b9b;
+/* buttons div*/
+.buttons {
+    
+    margin-top:1rem;
+    
+}
+a.button:hover {
+  
+  background-color: rgb(156, 156, 156);
+ 
+}
+footer a {
+  color:rgba(28, 70, 42, 0.918);
 }

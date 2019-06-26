@@ -13,105 +13,101 @@
 <body>
   <a name="top"></a>
 
-  <header id="header">
-    <div id="logo">
-      <img src="images/MOZonl.png">
-    </div>
+  <!--TEST-->
 
-    <!--Navbar - currently only contact form is active-->
 
+
+
+  <header class="main-header">
+    <nav class="main-nav">
+
+      <img
+        src="data:image/png;base64,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islei722aKSP9mWBkFNXHmBN4I+kQDDXTZhHXpBsxbafanPc7LXYa4tG+mhfFgg5deUBxjhHgSDB5U2G8nup1SFOmGclxp3GeOurJWW8ruuA7MPq1EG4TsnStTygTRGhz2zd3zD5HT+zQOiMrjzAkryahFaBTJ069TNoa0QcR6yUeeOI1YgA5vmrNSlIu66rVvvEHRhnvc0FxXY+fpdX/eUo9Ja93SNkWwuisaSk5LMyFnMkQ4EsRrv73zlPyMBaw/4J6aTRlQcY4xwFItA2DGFdVMcZksAr8Bf/33SKYIF0JjA2+GZF/OxHbPTqFxroswn7H6rDkqVAkibS09M7dRZAFBcWCFEULBCiKFggRFGgQD5AoskXUDsC7S249UxKO9BH3ugYNrYTEUB47iMkDiLCxmINg/SuEJ0dSLxPIyQhvRI1GEjO53VIp0mCu+eNELfqEKKehaQt8EjQsEC/0zjFcXxWpqMwh/zzB57zu+JtHULUs5D0UzwS1DP69+/v+EhxR2GOZe45vQKFVK9DiHoWkvE2ryT1iq5+UAlzvOCe0yuwpmodQtSzkJDflNMnd5K6A30qdEindaAYH9EhRD0PifuER5KGRgB9gt831ll+v/+TmGeTx/zBwPZGnPb9qw4h6nly8Y3EXBohYduxPeY7meOF07R/x5zbIuyrEZGlXYkSh3y5A5L0FsRKhLzusAsh1wwDtUu3wZHkAhTdPZh7ve6rFjE3LS2t2772iIiIOmvyuryC3hDFH+Z3+xGOeoHiynzTG6KoIl++QoqoYyRxekVU5ifHl1cTERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERUZ8+ffr8P2nvVjf9krqjAAAAAElFTkSuQmCC"
+        alt="header logo - MOZon">
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav class="mainnav">
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Cart</a></li>
-      <li><a href="">Account</a>
-      <li><a href="">Help</a></li>
-    </ul>
-  </nav>
+
+
+
+
   <div class="topright">
-    <a href=""><img src="images/Ecommerce_648.jpg" alt="Buy me now" width="60" height="60"></a>
+    <a href=""><img src="images/addToCart2.jpg" alt="Buy me now"></a>
   </div>
   <div class="topleft">
-    <a href=""><img src="images/Ecommerce_648.jpg" alt="Buy me now" width="60" height="60"></a>
+    <a href=""><img src="images/addToCart2.jpg" alt="Buy me now"></a>
   </div>
+
+
   <!--Description-->
   <section id="description">
-    <div class="container">
-      <div class="desc">
-        <article>
-          <!--Header of the product-->
-          <h1> Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel</h1>
-          <h3>Focus with Precision</h3>
-          <p>
-            All camera users, even beginners, will be able to capture amazing images and movies with this DSLR camera,
-            which
-            is equipped with a 24.1-megapixel APS-C-size CMOS sensor and an optical viewfinder for an authentic DSLR
-            shooting experience. Capturing sharp images is easy thanks to the fast, accurate AF and the large grip that
-            provides a firm, steady hold on the camera. Built-in Wi-Fi / NFC connectivity enables the seamless upload of
-            photos and videos to social media.
-          </p>
-        </article>
-      </div>
+    <h2> Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel</h2>
+    <div class="descContainer">
+
+      <!--Header of the product-->
+      <p>
+        All camera users, even beginners, will be able to capture amazing images and movies with this DSLR camera,
+        which
+        is equipped with a 24.1-megapixel APS-C-size CMOS sensor and an optical viewfinder for an authentic DSLR
+        shooting experience. Capturing sharp images is easy thanks to the fast, accurate AF and the large grip that
+        provides a firm, steady hold on the camera. Built-in Wi-Fi / NFC connectivity enables the seamless upload of
+        photos and videos to social media.
+      </p>
 
     </div>
   </section>
-
-  <div class="camdiv innerSquares">
-    <!--Picture-->
-    <figure id="camimage">
-      <div class="container">
-        <img src="images/canon1500new.jfif" title="Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel"
-          alt="Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel">
-        <figcaption>Canon Digital SLR Camera Body</figcaption>
-
-
-      </div>
-    </figure>
-    <a href="contact.html" class="button">Add to Cart</a>
-    <a href="contact.html" class="button">Contact Seller</a>
-  </div>
-
-  <!--List of fitures-->
   <section>
-    <div id="licontainer">
-      <div id="fituresList" class="fituresDiv">
+    <div class="fituresContainer">
+      <div class="camdiv">
+        <!--Picture-->
+        <figure id="camimage">
+
+          <img src="images/canon1500new.jfif" title="Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel"
+            alt="Canon Digital SLR Camera Body [EOS 1500D] with 24.1 Megapixel">
+          <figcaption>Canon Digital SLR Camera Body</figcaption>
+
+
+        </figure>
+        <div class="buttons"><a href="contact.html" class="button">Add to Cart</a>
+          <a href="contact.html" class="button">Contact Seller</a>
+        </div>
+      </div>
+
+      <!--List of fitures-->
+
+      <div class="ulcontainer">
         <ul>
-          <div class="box">
-            
-            <li>Canon’s remarkable shutter combined with ability to shoot up to 7.0 fps during continuous shooting
-              ensures
-              quick performance
+          <li>Canon’s remarkable shutter combined with ability to shoot up to 7.0 fps during continuous shooting
+            ensures quick performance
             <!-- <details>
-                <summary>Smartphone Usege</summary>
-                <p>Using a compatible smartphone with the <mark>Camera Connect App</mark> installed, you can shoot
-                  remotely
-                  from a distance, even in Live View mode, for those difficult-to-capture shots.</p>
-              </details>--> 
-            </li>
-          </div>
-          <div class="box">
-            <li>The Intelligent Viewfinder displays AF points and AF mode, has a grid display, a horizontal electronic
-              level, plus numerous other points of information
-            </li>
-          </div>
-          <div class="box">
-            <li>For next-level AF operation, the EOS 1500D camera has a wide-area, 45-point, all cross-type AF system
-              with
-              low luminance performance to EV -3 and 4 types of AF area selection modes
-            </li>
-          </div>
-          
-          <div class="box">
-            <li>The EOS 1500D camera’s Intelligent Viewfinder helps bring the thrill of SLR photography with each use
-            </li>
-          </div>
+                        <summary>Smartphone Usege</summary>
+                        <p>Using a compatible smartphone with the <mark>Camera Connect App</mark> installed, you can shoot
+                          remotely
+                          from a distance, even in Live View mode, for those difficult-to-capture shots.</p>
+                      </details>-->
+          </li>
+          <li>The Intelligent Viewfinder displays AF points and AF mode, has a grid display, a horizontal electronic
+            level, plus numerous other points of information
+          </li>
+          <li>For next-level AF operation, the EOS 1500D camera has a wide-area, 45-point, all cross-type AF system
+            with low luminance performance to EV -3 and 4 types of AF area selection modes
+          </li>
+          <li>The EOS 1500D camera’s Intelligent Viewfinder helps bring the thrill of SLR photography with each use
+          </li>
+
 
         </ul>
       </div>
     </div>
-
   </section>
+
+
 
   <!--Comparison table-->
   <section id="tableSection">
@@ -187,10 +183,10 @@
 
 
   <div class="bottomright">
-    <a href=""><img src="images/Ecommerce_648.jpg" alt="Buy me now" width="60" height="60"></a>
+    <a href=""><img src="images/addToCart2.jpg" alt="Buy me now"></a>
   </div>
   <div class="bottomleft">
-    <a href=""><img src="images/Ecommerce_648.jpg" alt="Buy me now" width="60" height="60"></a>
+    <a href=""><img src="images/addToCart2.jpg" alt="Buy me now"></a>
   </div>
   <!--Footer-->
   <footer>
